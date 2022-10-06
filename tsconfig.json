@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    "baseUrl": ".",
+    "paths": {
+      "$controllers/*": ["./src/controllers/*"],
+      "$middlewares/*": ["./src/middlewares/*"],
+      "$routes/*": ["./src/routes/*"],
+      "$database/*": ["./src/database/*"],
+      "$logic/*": ["./src/logic/*"],
+      "$util/*": ["./src/util/*"],
+      "$validators/*": ["./src/validators/*"],
+    },
+
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  }
+}
